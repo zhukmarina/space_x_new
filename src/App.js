@@ -1,7 +1,7 @@
 import "./App.scss";
 import { Provider } from "react-redux";
 import Header from "../src/components/header/Header";
-import Home from "./pages/home";
+import Home from "./pages/home/Home";
 import DetailsPage from "./pages/details/DetailsPage";
 import { Routes, Route ,} from "react-router-dom";
 import store from "./appStore";

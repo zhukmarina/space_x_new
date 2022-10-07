@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { initItemsCreator } from "../../appStore/actionCreator/itemCreator";
-import Preloader from "../../components/Preloader/Preloader"
+import Preloader from "../../components/Preloader/Preloader";
 import Item from "../../components/items/Item";
 import { useEffect } from "react";
 
@@ -12,12 +12,11 @@ const Home = (props) => {
   const dragons = localStorage.getItem("dragons");
   useEffect(() => {
     dispatch(initItemsCreator());
-    
-  }, []);
+  }, [dispatch]);
 
   return !dragons || isLoading ? (
     <Preloader />
-  ) :(
+  ) : (
     <>
       {items.map((element) => {
         return (
@@ -31,8 +30,7 @@ const Home = (props) => {
         );
       })}
     </>
-  )
-  
+  );
 };
 
 export default Home;
