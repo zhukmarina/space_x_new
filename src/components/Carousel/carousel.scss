@@ -1,0 +1,126 @@
+.slick-slider {
+  position: relative;
+}
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+  background: rgba(255, 255, 255, 0.5);
+  width: 45px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.slick-prev {
+  left: 0;
+  top: 50%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.slick-next {
+  right: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.slick-slide img {
+  width: 100vw;
+  height: 77vh;
+  object-fit: cover;
+}
+
+.imageWrapper {
+  position: relative;
+
+}
+
+.slick-dots {
+  bottom: 0;
+}
+.slick-thumb li {
+  width: 100px;
+  height: 70px;
+  filter: grayscale(100%);
+}
+
+
+.slick-thumb li.slick-active {
+  filter: grayscale(0%);
+}
+.arrowStyle {
+  color: black;
+  font-size: 25px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .imageWrapper .textOffer {
+    padding: 0 60px;
+    .mainTextOffer {
+      font-size: 40px;
+    }
+    .textsubOffer {
+      font-size: 20px;
+    }
+  }
+  .slick-slide img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-slide img {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+  .slick-thumb li {
+    display: none;
+  }
+  .imageWrapper .textOffer {
+    padding: 0 70px;
+  }
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    background: rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 479px) {
+  .imageWrapper .textOffer {
+    padding: 0 20px;
+    .mainTextOffer {
+      font-size: 25px;
+    }
+    .textsubOffer {
+      font-size: 15px;
+    }
+  }
+  .customPaging {
+    display: none;
+  }
+
+  .slick-thumb li {
+    width: 50px;
+    height: 50px;
+  }
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    display: none;
+  }
+}

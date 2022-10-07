@@ -1,0 +1,39 @@
+.root {
+  width: 650px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 15px 12px 12px;
+  position: relative;
+  margin: 10px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  background: linear-gradient(180deg, rgba(207, 207, 207, 0.5), #0f1a21);
+}
+
+.favButton {
+  padding: 4px !important;
+  min-width: unset !important;
+  margin-left: 10px !important;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 10px 0 10px;
+  color: #092536;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
