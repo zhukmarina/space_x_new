@@ -1,4 +1,4 @@
-import "./App.scss";
+import styles from "./App.module.scss";
 import { Provider } from "react-redux";
 import Header from "../src/components/header/Header";
 import Home from "./pages/home/Home";
@@ -14,9 +14,9 @@ function App() {
     
     <Provider store={store}>
     
-      <div className="App">
+      <div className={styles.app}>
         <Header />
-        <section className="itemContainer" >
+        <section className={styles.itemContainer} >
         <Routes>
           <Route  path="/" element={<Home />} />
           <Route  path="/dragons" element={<Home />} />

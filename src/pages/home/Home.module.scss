@@ -1,0 +1,48 @@
+.primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#fff;
+    
+    width: 1200px;
+    margin: 0 auto;
+    
+   
+    &_tagline{
+        
+       filter: brightness(1);
+        margin-top: 58px;
+        
+
+        h1{
+            font-size: 70px;
+        }
+
+        span{
+            font-size: 25px;
+        }
+        
+    }
+   &_arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 150px;
+    margin-bottom: 40px;
+
+    svg{
+        margin-top: 15px;
+        height: 1,5em;
+        width: 2em;
+    }
+   }
+}
+    .choose{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+
+    }
