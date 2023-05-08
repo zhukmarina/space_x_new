@@ -1,0 +1,27 @@
+.root {
+    max-width: 1200px;
+    height: auto;  
+    box-sizing: border-box;
+    padding: 15px 12px 12px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background: linear-gradient(
+      180deg,
+      rgba(207, 207, 207, 0.5),
+     #0F1A21 ,
+    );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+  }
+
+  @media screen and (max-width: 750px) {
+  
+    .root{
+      flex-direction: column;
+    }
+} 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemOne from "../../components/itemOne/ItemOne";
-
+import styles from "./DetailsPage.module.scss"
 
 
 const DetailsPage = () => {
@@ -15,9 +15,9 @@ const DetailsPage = () => {
   }, [id]);
   
   return (
-    <>
+    <div className={styles.root}>
       <ItemOne item={item}/>
-    </>
+    </div>
   );
 };
 
