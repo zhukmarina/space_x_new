@@ -7,3 +7,5 @@ Code technologies:
 -React
 -Redux
 -Sass, Material UI`
+
+![Image alt](https://github.com/zhukmarina/space_x_new/blob/main/public/spacex.png)
